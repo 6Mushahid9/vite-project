@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FaFireExtinguisher, FaGraduationCap, FaEye } from "react-icons/fa";
 
 const Home = () => {
-
   const coursesData = [
     {
       name: "Diploma",
@@ -75,7 +74,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />   
+      <Navbar />
 
       {/* Intro */}
       <section className="w-full bg-white py-20 relative overflow-hidden">
@@ -90,13 +89,14 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-center text-4xl md:text-5xl font-extrabold text-green-900 mb-4 tracking-wide">
+          <h2 className="text-center text-3xl md:text-5xl font-extrabold text-green-900 mb-4 tracking-wide">
             WELCOME TO
           </h2>
-          <p className="text-2xl text-center text-green-700 font-semibold mb-10">
-            Aim Institute OF Safety & Health – Your Trusted Partner in{" "}
-            <span className="text-green-800 underline underline-offset-4">
-              Safety Excellence
+          <p className="text-md md:text-2xl font-extrabold text-center text-green-700 mb-10">
+            Aim Institute OF Safety & Health
+            <br className="block md:hidden" />
+            <span className="text-green-800 underline underline-offset-4 ml-0 md:ml-3">
+              +91 93355 21687
             </span>
           </p>
 
@@ -130,7 +130,8 @@ const Home = () => {
           </p>
 
           <p className="font-bold text-green-900 text-xl text-center">
-            We offer comprehensive safety education and placement support at a nominal cost, ensuring quality training is accessible to everyone.
+            We offer comprehensive safety education and placement support at a
+            nominal cost, ensuring quality training is accessible to everyone.
           </p>
         </motion.div>
       </section>
@@ -164,7 +165,17 @@ const Home = () => {
               </h2>
             </div>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              Aim Institute of Safety & Health is a leading institute dedicated to training and developing skilled safety professionals for industries worldwide. Established with a vision to promote a culture of safety, we offer internationally recognized courses in occupational health and safety, industrial safety, fire safety, and environmental management. Our institute is backed by experienced faculty, modern training infrastructure, and a strong commitment to practical, hands-on learning. We prepare our students not just for certifications, but for real-world challenges in various sectors including construction, oil & gas, manufacturing, and logistics.
+              Aim Institute of Safety & Health is a leading institute dedicated
+              to training and developing skilled safety professionals for
+              industries worldwide. Established with a vision to promote a
+              culture of safety, we offer internationally recognized courses in
+              occupational health and safety, industrial safety, fire safety,
+              and environmental management. Our institute is backed by
+              experienced faculty, modern training infrastructure, and a strong
+              commitment to practical, hands-on learning. We prepare our
+              students not just for certifications, but for real-world
+              challenges in various sectors including construction, oil & gas,
+              manufacturing, and logistics.
             </p>
           </section>
 
@@ -265,10 +276,10 @@ const Home = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row sm:items-center text-sm text-gray-700 gap-2">
                   {course.fees && (
-  <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium w-max">
-    Only At : {course.fees}
-  </span>
-)}
+                    <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium w-max">
+                      Only At : {course.fees}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className="flex-shrink-0 self-start sm:self-center">
