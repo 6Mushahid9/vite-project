@@ -89,11 +89,12 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-center text-3xl md:text-5xl font-extrabold text-green-900 mb-4 tracking-wide">
+          <h2 className="text-center text-2xl md:text-5xl font-extrabold text-green-900 mb-2 md:mb-4 tracking-wide">
             WELCOME TO
           </h2>
-          <p className="text-md md:text-2xl font-extrabold text-center text-green-700 mb-10">
-            Aim Institute OF Safety & Health
+          <p className="text-xl md:text-2xl font-extrabold text-center text-green-700 mb-10">
+            AIM INSTITUTE 
+            <br className="block md:hidden"/> OF SAFETY & HEALTH
             <br className="block md:hidden" />
             <span className="text-green-800 underline underline-offset-4 ml-0 md:ml-3">
               +91 93355 21687
