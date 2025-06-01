@@ -134,6 +134,7 @@ const Home = () => {
             We offer comprehensive safety education and placement support at a
             nominal cost, ensuring quality training is accessible to everyone.
           </p>
+            <img src="/hero.jpg" alt="hero" className="md:hidden w-full rounded-sm mt-5 mb-[-70px]"/>
         </motion.div>
       </section>
 
